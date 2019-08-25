@@ -1,7 +1,14 @@
 CPS files are the postprocessors used with your Autodesk CAM software.
+
 Ronald:
   Postprocess in millimeters only!
   Manual NC works only using "Pass Through" operation subtype.
   For rotary jig control, angles can be indexed using Manual NC and command format
     ;!ZEA#.#;
     where #.# is your decimal degree angle.
+
+Tormach:
+  Path Pilot post downloaded from Autodesk HSM Library.
+
+ForrestScientific:
+  Unpublished post given to us upon request, required to run machine with Autodesk software.
