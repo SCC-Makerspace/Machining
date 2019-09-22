@@ -50,7 +50,7 @@ properties = {
   optionalStopTool: true, // optional stop before tool change
   optionalStopOperation: false, // optional stop between all operations
   separateWordsWithSpace: true, // specifies that the words should be separated with a white space
-  useRadius: false, // specifies that arcs should be output using the radius (R word) instead of the I, J, and K words.
+  useRadius: true, // specifies that arcs should be output using the radius (R word) instead of the I, J, and K words.
   dwellInSeconds: true, // specifies the unit for dwelling: true:seconds and false:milliseconds.
   forceWorkOffset: false, // forces the work offset code at tool changes
   rotaryTableAxis: "none", // none, X, Y, Z, -X, -Y, -Z
