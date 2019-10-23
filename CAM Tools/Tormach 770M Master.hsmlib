@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-16" standalone="no" ?>
+<?xml-stylesheet type='text/xsl' href='tool-library.xsl'?>
+<tool-library xmlns="http://www.hsmworks.com/xml/2004/cnc/tool-library" version="1.0">
+
+  <tool guid="223aa989-a19e-4f80-93eb-23e4b1a04af4" type="flat end mill" unit="inches" version="1.1">
+    <description>[Aluminum] Tool 2: 0.25" 3-flute SqEM in TTS-ER20</description>
+    <nc break-control="0" diameter-offset="0" length-offset="0" live-tool="1" manual-tool-change="1" number="2" turret="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body body-length="1.181" coolant-support="no" diameter="0.249" flute-length="0.805" number-of-flutes="3" overall-length="2.506" shaft-diameter="0.249" shoulder-length="0.805" thread-pitch="0" thread-profile-angle="60"/>
+    <holder description="TTS-ER20 Holder" product-id="31829" vendor="Tormach">
+      <section diameter="1.02362" length="0"/>
+      <section diameter="1.33858" length="0.129921"/>
+      <section diameter="1.33858" length="0.748031"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="0.984252" length="0.590551"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.26378"/>
+      <section diameter="1.16142" length="0"/>
+      <section diameter="1.16142" length="0.0944882"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.268898"/>
+    </holder>
+    <motion clockwise="yes" cutting-feedrate="26.3174" entry-feedrate="26.3714" exit-feedrate="26.3714" feed-mode="per-minute" plunge-feedrate="8.77247" ramp-feedrate="6.57935" ramp-spindle-rpm="3249.06" retract-feedrate="8.77247" spindle-rpm="3249.06"/>
+  </tool>
+
+  <tool guid="30df07d2-de43-4649-b71a-d976031259dd" type="flat end mill" unit="inches" version="1.1">
+    <description>[Aluminum] Tool 3: 0.125" 3-flute SqEM in TTS-ER20</description>
+    <nc break-control="0" diameter-offset="0" length-offset="0" live-tool="1" manual-tool-change="0" number="3" turret="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body body-length="0.758" coolant-support="no" diameter="0.1245" flute-length="0.4215" number-of-flutes="3" overall-length="2.005" shaft-diameter="0.1245" shoulder-length="0.4215" thread-pitch="0" thread-profile-angle="60"/>
+    <holder description="TTS-ER20 Holder" product-id="31829" vendor="Tormach">
+      <section diameter="1.02362" length="0"/>
+      <section diameter="1.33858" length="0.129921"/>
+      <section diameter="1.33858" length="0.748031"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="0.984252" length="0.590551"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.26378"/>
+      <section diameter="1.16142" length="0"/>
+      <section diameter="1.16142" length="0.0944882"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.268898"/>
+    </holder>
+    <motion clockwise="yes" cutting-feedrate="8.77503" entry-feedrate="8.64" exit-feedrate="8.64" feed-mode="per-minute" plunge-feedrate="2.92501" ramp-feedrate="2.175" ramp-spindle-rpm="3250.01" retract-feedrate="2.92501" spindle-rpm="3250.01"/>
+  </tool>
+
+  <tool guid="866624d4-6e04-4583-a41d-44780b093e8f" type="flat end mill" unit="inches" version="1.1">
+    <description>[Aluminum] Tool 5: 0.125" 3-flute SqEM in TTS-ER20</description>
+    <nc break-control="0" diameter-offset="0" length-offset="0" live-tool="1" manual-tool-change="0" number="5" turret="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body body-length="0.7375" coolant-support="no" diameter="0.1245" flute-length="0.4215" number-of-flutes="3" overall-length="2.005" shaft-diameter="0.1245" shoulder-length="0.4215" thread-pitch="0" thread-profile-angle="60"/>
+    <holder description="TTS-ER20 Holder" product-id="31829" vendor="Tormach">
+      <section diameter="1.02362" length="0"/>
+      <section diameter="1.33858" length="0.129921"/>
+      <section diameter="1.33858" length="0.748031"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="0.984252" length="0.590551"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.26378"/>
+      <section diameter="1.16142" length="0"/>
+      <section diameter="1.16142" length="0.0944882"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.268898"/>
+    </holder>
+    <motion clockwise="yes" cutting-feedrate="8.77503" entry-feedrate="8.64" exit-feedrate="8.64" feed-mode="per-minute" plunge-feedrate="2.92501" ramp-feedrate="2.175" ramp-spindle-rpm="3250.01" retract-feedrate="2.92501" spindle-rpm="3250.01"/>
+  </tool>
+
+  <tool guid="e4e946c8-2169-4e62-aad4-0f21a9ab4552" type="flat end mill" unit="inches" version="1.1">
+    <description>[Aluminum] Tool 7: 0.5" 3-flute SqEM in TTS-ER20</description>
+    <comment>OVR: 3.9185</comment>
+    <nc break-control="0" diameter-offset="7" length-offset="7" live-tool="1" manual-tool-change="1" number="7" turret="0"/>
+    <coolant mode="flood"/>
+    <material name="hss"/>
+    <body body-length="1.762" coolant-support="no" diameter="0.499" flute-length="1.345" number-of-flutes="3" overall-length="3" shaft-diameter="0.499" shoulder-length="1.554" thread-pitch="0" thread-profile-angle="60"/>
+    <holder description="TTS-ER20 Holder" product-id="31829" vendor="Tormach">
+      <section diameter="1.02362" length="0"/>
+      <section diameter="1.33858" length="0.129921"/>
+      <section diameter="1.33858" length="0.748031"/>
+      <section diameter="0.984252" length="0"/>
+      <section diameter="0.984252" length="0.590551"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.26378"/>
+      <section diameter="1.16142" length="0"/>
+      <section diameter="1.16142" length="0.0944882"/>
+      <section diameter="1.5" length="0"/>
+      <section diameter="1.5" length="0.268898"/>
+    </holder>
+    <motion clockwise="yes" cutting-feedrate="38.9841" entry-feedrate="39.3701" exit-feedrate="39.3701" feed-mode="per-minute" plunge-feedrate="12.9947" ramp-feedrate="9.75" ramp-spindle-rpm="3250" retract-feedrate="12.9947" spindle-rpm="3248.67"/>
+  </tool>
+
+</tool-library>
