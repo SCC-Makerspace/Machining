@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template-document xmlns="http://www.hsmworks.com/namespace/hsmworks/document/template" version="1.0">
+
+  <template description="Ground Floor Standoff Holes" strategy="drill" unit="inches">
+    <tool guid="{1ead9e91-a9c7-4179-8a91-73c17b6437d1}" type="drill" unit="inches" version="1.1">
+      <description>Tool 00: .1065" 2-flute Ti-Coat Drill in Tormach Drill Chuck</description>
+      <comment>[Aluminum][Drilling]</comment>
+      <nc break-control="0" diameter-offset="14" length-offset="14" live-tool="1" manual-tool-change="1" number="14" turret="0"/>
+      <coolant mode="disabled"/>
+      <material name="ti coated"/>
+      <body body-length="0.97" coolant-support="no" diameter="0.1065" flute-length="0.97" number-of-flutes="2" overall-length="2" shaft-diameter="0.1065" shoulder-length="0.97" taper-angle="118" thread-pitch="0" thread-profile-angle="60"/>
+      <holder comment="Maritool CAT40-ER32-1.85" description="Maritool CAT40-ER32-1.85" guid="{0be289a5-fd48-4c02-a142-362117f08537}" library-name="Holders - Maritool" product-id="CAT40-ER32-1.85" vendor="Maritool">
+        <section diameter="1.5" length="0"/>
+        <section diameter="1.97" length="0.148"/>
+        <section diameter="1.97" length="0.836"/>
+        <section diameter="1.57" length="0"/>
+        <section diameter="1.57" length="0.151"/>
+        <section diameter="1.75" length="0.09"/>
+        <section diameter="2.442" length="0"/>
+        <section diameter="2.502" length="0.03"/>
+        <section diameter="2.502" length="0.145"/>
+        <section diameter="2.215" length="0.079"/>
+        <section diameter="2.215" length="0.118"/>
+        <section diameter="2.502" length="0.079"/>
+        <section diameter="2.502" length="0.143"/>
+        <section diameter="2.442" length="0.03"/>
+        <section diameter="1.75" length="0"/>
+        <section diameter="1.75" length="0.125"/>
+      </holder>
+      <motion clockwise="yes" cutting-feedrate="40" entry-feedrate="40" exit-feedrate="40" feed-mode="per-minute" plunge-feedrate="54.8748" ramp-feedrate="54.8748" ramp-spindle-rpm="16139.7" retract-feedrate="20" spindle-rpm="16139.7"/>
+    </tool>
+    <parameter expression="false" name="autoToolSelection"/>
+    <parameter expression="'drill'" name="tool_type"/>
+    <parameter expression="'tapered_bull_nose'" name="tool_taperedType"/>
+    <parameter expression="'inches'" name="tool_unit"/>
+    <parameter expression="14" name="tool_number"/>
+    <parameter expression="tool_number" name="tool_diameterOffset"/>
+    <parameter expression="tool_number" name="tool_lengthOffset"/>
+    <parameter expression="tool_number" name="tool_compensationOffset"/>
+    <parameter expression="0" name="tool_turret"/>
+    <parameter expression="true" name="tool_manualToolChange"/>
+    <parameter expression="false" name="tool_breakControl"/>
+    <parameter expression="true" name="tool_live"/>
+    <parameter expression="'disabled'" name="tool_coolant"/>
+    <parameter expression="'ti coated'" name="tool_material"/>
+    <parameter expression="'Tool 00: .1065&quot; 2-flute Ti-Coat Drill in Tormach Drill Chuck'" name="tool_description"/>
+    <parameter expression="'[Aluminum][Drilling]'" name="tool_comment"/>
+    <parameter expression="''" name="tool_vendor"/>
+    <parameter expression="''" name="tool_productId"/>
+    <parameter expression="0.1065in" name="tool_diameter"/>
+    <parameter expression="tool_diameter + 2* tool_cornerRadius" name="tool_diameterDovetail"/>
+    <parameter expression="0.0in" name="tool_tipDiameter"/>
+    <parameter expression="0.0in" name="tool_tipOffset"/>
+    <parameter expression="0.0in" name="tool_cornerRadius"/>
+    <parameter expression="(tool_type == 'chamfer mill') ? 45.0deg : (tool_type == 'face mill' ? 0 : 5.0deg)" name="tool_taperAngle"/>
+    <parameter expression="118." name="tool_tipAngle"/>
+    <parameter expression="60." name="tool_threadProfileAngle"/>
+    <parameter expression="0.0in" name="tool_tipLength"/>
+    <parameter expression="0.97in" name="tool_fluteLength"/>
+    <parameter expression="tool_fluteLength" name="tool_shoulderLength"/>
+    <parameter expression="tool_shoulderLength" name="tool_bodyLength"/>
+    <parameter expression="2.in" name="tool_overallLength"/>
+    <parameter expression="tool_diameter" name="tool_shaftDiameter"/>
+    <parameter expression="0.0in" name="tool_threadPitch"/>
+    <parameter expression="1" name="tool_numberOfTeeth"/>
+    <parameter expression="2" name="tool_numberOfFlutes"/>
+    <parameter expression="true" name="holder_attached"/>
+    <parameter expression="'Maritool CAT40-ER32-1.85'" name="holder_description"/>
+    <parameter expression="'Maritool CAT40-ER32-1.85'" name="holder_comment"/>
+    <parameter expression="'Maritool'" name="holder_vendor"/>
+    <parameter expression="'CAT40-ER32-1.85'" name="holder_productId"/>
+    <parameter expression="''" name="holder_productLink"/>
+    <parameter expression="'Holders - Maritool'" name="holder_libraryName"/>
+    <parameter expression="''" name="tool_productLink"/>
+    <parameter expression="16139.65620086825402" name="tool_spindleSpeed"/>
+    <parameter expression="tool_isTurning ? (tool_unit == 'millimeters' ? 25 : 25.4) : tool_diameter" name="tool_stockDiameter"/>
+    <parameter expression="tool_diameter * Math.PI * tool_spindleSpeed" name="tool_surfaceSpeed"/>
+    <parameter expression="tool_spindleSpeed" name="tool_rampSpindleSpeed"/>
+    <parameter expression="40inpm" name="tool_feedCutting"/>
+    <parameter expression="tool_feedCutting/(tool_spindleSpeed * tool_numberOfFlutes)" name="tool_feedPerTooth"/>
+    <parameter expression="120inpm" name="tool_feedProbeLink"/>
+    <parameter expression="(tool_type == 'probe' || tool_type == 'laser cutter' || tool_type == 'waterjet' || tool_type == 'plasma cutter' ? 40inpm : tool_feedCutting)" name="tool_feedEntry"/>
+    <parameter expression="tool_feedCutting" name="tool_feedExit"/>
+    <parameter expression="12inpm" name="tool_feedProbeMeasure"/>
+    <parameter expression="tool_feedPlunge" name="tool_feedRamp"/>
+    <parameter expression="54.87483108295206in/min" name="tool_feedPlunge"/>
+    <parameter expression="tool_feedPlunge/tool_spindleSpeed" name="tool_feedPerRevolution"/>
+    <parameter expression="20.in/min" name="tool_feedRetract"/>
+    <parameter expression="true" name="tool_clockwise"/>
+    <parameter expression="'none'" name="featureOperationId"/>
+    <parameter expression="'selection-faces'" name="holeMode"/>
+    <parameter expression="false" name="holePoints"/>
+    <parameter expression="true" name="holeFaces"/>
+    <parameter expression="true" name="selectSameDiameter"/>
+    <parameter expression="false" name="selectSameDepth"/>
+    <parameter expression="false" name="selectSameTopZ"/>
+    <parameter expression="false" name="checkForOcclusions"/>
+    <parameter expression="0.2in" name="holeDiameterMinimum"/>
+    <parameter expression="holeDiameterMinimum * 2" name="holeDiameterMaximum"/>
+    <parameter expression="false" name="containmentBoundary"/>
+    <parameter expression="true" name="mergeHoleSegments"/>
+    <parameter expression="false" name="autoMergeHoleSegments"/>
+    <parameter expression="false" name="orderHolesByDepth"/>
+    <parameter expression="'optimize-order'" name="holeToolpathOrder"/>
+    <parameter expression="true" name="holeToolpathOrder_bidirectional"/>
+    <parameter expression="false" name="reverseOrder"/>
+    <parameter expression="false" name="useMultiAxisDrilling"/>
+    <parameter expression="false" name="doLimitAngle"/>
+    <parameter expression="0deg" name="limitAngleMinimum"/>
+    <parameter expression="limitAngleMinimum + 45deg" name="limitAngleMaximum"/>
+    <parameter expression="tool_diameter * 1e-5" name="compareTolerance"/>
+    <parameter expression="NaN" name="holeTopDiameter"/>
+    <parameter expression="false" name="overrideToolView"/>
+    <parameter expression="'axesZX'" name="view_orientation_mode"/>
+    <parameter expression="false" name="view_orientation_axisZ"/>
+    <parameter expression="false" name="view_orientation_flipZ"/>
+    <parameter expression="false" name="view_orientation_axisX"/>
+    <parameter expression="false" name="view_orientation_flipX"/>
+    <parameter expression="false" name="view_orientation_axisY"/>
+    <parameter expression="false" name="view_orientation_flipY"/>
+    <parameter expression="false" name="view_orientation_cSys"/>
+    <parameter expression="'jobOrigin'" name="view_origin_mode"/>
+    <parameter expression="false" name="view_origin_point"/>
+    <parameter expression="'top center'" name="view_origin_boxPoint"/>
+    <parameter expression="'from stock top'" name="clearanceHeight_mode"/>
+    <parameter expression="false" name="clearanceHeight_ref"/>
+    <parameter expression="2in" name="clearanceHeight_offset"/>
+    <parameter expression="50.8" name="clearanceHeight_value"/>
+    <parameter expression="'from stock top'" name="retractHeight_mode"/>
+    <parameter expression="false" name="retractHeight_ref"/>
+    <parameter expression=".25in" name="retractHeight_offset"/>
+    <parameter expression="6.35" name="retractHeight_value"/>
+    <parameter expression="'from stock top'" name="feedHeight_mode"/>
+    <parameter expression="false" name="feedHeight_ref"/>
+    <parameter expression=".125in" name="feedHeight_offset"/>
+    <parameter expression="3.175" name="feedHeight_value"/>
+    <parameter expression="'from stock top'" name="topHeight_mode"/>
+    <parameter expression="false" name="topHeight_ref"/>
+    <parameter expression="0in" name="topHeight_offset"/>
+    <parameter expression="0.0" name="topHeight_value"/>
+    <parameter expression="'from stock bottom'" name="bottomHeight_mode"/>
+    <parameter expression="false" name="bottomHeight_ref"/>
+    <parameter expression="-0.05 in" name="bottomHeight_offset"/>
+    <parameter expression="-4.445" name="bottomHeight_value"/>
+    <parameter expression="0in" name="toChamferWidth"/>
+    <parameter expression="tool_diameter" name="toChamferDiameter"/>
+    <parameter expression="true" name="drillTipThroughBottom"/>
+    <parameter expression="0in" name="breakThroughDepth"/>
+    <parameter expression="'chip-breaking'" name="cycleType"/>
+    <parameter expression="0.08in" name="incrementalDepth"/>
+    <parameter expression="'right'" name="threading"/>
+    <parameter expression="'climb'" name="cycleDirection"/>
+    <parameter expression="0.04in" name="pitch"/>
+    <parameter expression="2 * tool_diameter" name="diameter"/>
+    <parameter expression=".01in" name="peckingDepth"/>
+    <parameter expression="0in" name="peckingDepthReduction"/>
+    <parameter expression="peckingDepth" name="minimumPeckingDepth"/>
+    <parameter expression=".045in" name="accumulatedPeckingDepth"/>
+    <parameter expression=".01in" name="chipBreakDistance"/>
+    <parameter expression="false" name="dwellBeforeRetract"/>
+    <parameter expression="0s" name="dwellingPeriod"/>
+    <parameter expression="0in" name="boringShift"/>
+    <parameter expression="0deg" name="shiftOrientation"/>
+    <parameter expression="0in" name="backBoreDistance"/>
+    <parameter expression="false" name="useMultipleSteps"/>
+    <parameter expression="2" name="numberOfSteps"/>
+    <parameter expression="Math.max((tool_diameter - 2 * tool_cornerRadius) * 0.95; tool_diameter * 0.05)" name="cycleStepover"/>
+    <parameter expression="'computer'" name="cycleCompensationType"/>
+    <parameter expression="false" name="cycleRepeatPass"/>
+    <parameter expression="tool_diameter" name="startingDepth"/>
+    <parameter expression="0in" name="dwellDepth"/>
+    <parameter expression="false" name="stopSpindle"/>
+    <parameter expression="tool_spindleSpeed" name="positioningSpindleSpeed"/>
+    <parameter expression="tool_diameter" name="breakThroughDistance"/>
+    <parameter expression="tool_feedRetract" name="breakThroughFeedrate"/>
+    <parameter expression="tool_spindleSpeed" name="breakThroughSpindleSpeed"/>
+    <parameter expression="tool_feedRetract" name="positioningFeedrate"/>
+    <parameter expression="Math.min(tool_diameter/100; 0.01mm)" name="tolerance"/>
+    <parameter expression="0.04in" name="tool_stepdown"/>
+    <parameter expression="0.008in" name="tool_finishingStepdown"/>
+    <parameter expression="tool_diameter * 0.5" name="tool_stepover"/>
+    <parameter expression="tool_diameter * 0.1" name="tool_finishingStepover"/>
+    <parameter expression="'helix'" name="tool_rampType"/>
+    <parameter expression="2.0deg" name="tool_rampAngle"/>
+  </template>
+
+</template-document>

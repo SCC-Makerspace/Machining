@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template-document xmlns="http://www.hsmworks.com/namespace/hsmworks/document/template" version="1.0">
+
+  <template description="Top Plate Rivet Holes Finish" strategy="bore" unit="inches">
+    <tool guid="{042562a6-2989-4eda-b3c0-ff5bec854446}" type="flat end mill" unit="inches" version="1.1">
+      <description>Tool 00: 04/32" 1-flute Carbide SlEM in TTS-ER32</description>
+      <comment>[Aluminum][Slotting]</comment>
+      <manufacturer>Amana Tool</manufacturer>
+      <product-id>51474</product-id>
+      <nc break-control="0" diameter-offset="6" length-offset="6" live-tool="1" manual-tool-change="1" number="6" turret="0"/>
+      <coolant mode="disabled"/>
+      <material name="carbide"/>
+      <body body-length="0.54" coolant-support="no" diameter="0.125" flute-length="0.25" number-of-flutes="1" overall-length="2" shaft-diameter="0.25" shoulder-length="0.335" thread-pitch="0" thread-profile-angle="60"/>
+      <holder comment="Maritool CAT40-ER32-1.85" description="Maritool CAT40-ER32-1.85" guid="{0be289a5-fd48-4c02-a142-362117f08537}" library-name="Holders - Maritool" product-id="CAT40-ER32-1.85" vendor="Maritool">
+        <section diameter="1.5" length="0"/>
+        <section diameter="1.97" length="0.148"/>
+        <section diameter="1.97" length="0.836"/>
+        <section diameter="1.57" length="0"/>
+        <section diameter="1.57" length="0.151"/>
+        <section diameter="1.75" length="0.09"/>
+        <section diameter="2.442" length="0"/>
+        <section diameter="2.502" length="0.03"/>
+        <section diameter="2.502" length="0.145"/>
+        <section diameter="2.215" length="0.079"/>
+        <section diameter="2.215" length="0.118"/>
+        <section diameter="2.502" length="0.079"/>
+        <section diameter="2.502" length="0.143"/>
+        <section diameter="2.442" length="0.03"/>
+        <section diameter="1.75" length="0"/>
+        <section diameter="1.75" length="0.125"/>
+      </holder>
+      <shaft>
+        <section diameter="0.125" length="0"/>
+        <section diameter="0.1325" length="0.015"/>
+        <section diameter="0.1325" length="0.05"/>
+        <section diameter="0.25" length="0.2"/>
+      </shaft>
+      <motion clockwise="yes" cutting-feedrate="3.6" entry-feedrate="3.6" exit-feedrate="3.6" feed-mode="per-minute" plunge-feedrate="3.6" ramp-feedrate="3.6" ramp-spindle-rpm="18000" retract-feedrate="3.6" spindle-rpm="18000"/>
+    </tool>
+    <parameter expression="'flat end mill'" name="tool_type"/>
+    <parameter expression="'tapered_bull_nose'" name="tool_taperedType"/>
+    <parameter expression="'inches'" name="tool_unit"/>
+    <parameter expression="6" name="tool_number"/>
+    <parameter expression="tool_number" name="tool_diameterOffset"/>
+    <parameter expression="tool_number" name="tool_lengthOffset"/>
+    <parameter expression="tool_number" name="tool_compensationOffset"/>
+    <parameter expression="0" name="tool_turret"/>
+    <parameter expression="true" name="tool_manualToolChange"/>
+    <parameter expression="false" name="tool_breakControl"/>
+    <parameter expression="true" name="tool_live"/>
+    <parameter expression="'disabled'" name="tool_coolant"/>
+    <parameter expression="'carbide'" name="tool_material"/>
+    <parameter expression="'Tool 00: 04/32&quot; 1-flute Carbide SlEM in TTS-ER32'" name="tool_description"/>
+    <parameter expression="'[Aluminum][Slotting]'" name="tool_comment"/>
+    <parameter expression="'Amana Tool'" name="tool_vendor"/>
+    <parameter expression="'51474'" name="tool_productId"/>
+    <parameter expression="0.125in" name="tool_diameter"/>
+    <parameter expression="tool_diameter + 2* tool_cornerRadius" name="tool_diameterDovetail"/>
+    <parameter expression="0.0in" name="tool_tipDiameter"/>
+    <parameter expression="0.0in" name="tool_tipOffset"/>
+    <parameter expression="0.0in" name="tool_cornerRadius"/>
+    <parameter expression="0.0" name="tool_taperAngle"/>
+    <parameter expression="(tool_type == 'counter sink') ? 90.0deg : 118.0deg" name="tool_tipAngle"/>
+    <parameter expression="60." name="tool_threadProfileAngle"/>
+    <parameter expression="0.0in" name="tool_tipLength"/>
+    <parameter expression="0.25in" name="tool_fluteLength"/>
+    <parameter expression="0.335in" name="tool_shoulderLength"/>
+    <parameter expression="0.54in" name="tool_bodyLength"/>
+    <parameter expression="2.in" name="tool_overallLength"/>
+    <parameter expression="0.25in" name="tool_shaftDiameter"/>
+    <parameter expression="0.0in" name="tool_threadPitch"/>
+    <parameter expression="1" name="tool_numberOfTeeth"/>
+    <parameter expression="1" name="tool_numberOfFlutes"/>
+    <parameter expression="true" name="holder_attached"/>
+    <parameter expression="'Maritool CAT40-ER32-1.85'" name="holder_description"/>
+    <parameter expression="'Maritool CAT40-ER32-1.85'" name="holder_comment"/>
+    <parameter expression="'Maritool'" name="holder_vendor"/>
+    <parameter expression="'CAT40-ER32-1.85'" name="holder_productId"/>
+    <parameter expression="''" name="holder_productLink"/>
+    <parameter expression="'Holders - Maritool'" name="holder_libraryName"/>
+    <parameter expression="''" name="tool_productLink"/>
+    <parameter expression="18000." name="tool_spindleSpeed"/>
+    <parameter expression="tool_isTurning ? (tool_unit == 'millimeters' ? 25 : 25.4) : tool_diameter" name="tool_stockDiameter"/>
+    <parameter expression="tool_diameter * Math.PI * tool_spindleSpeed" name="tool_surfaceSpeed"/>
+    <parameter expression="tool_spindleSpeed" name="tool_rampSpindleSpeed"/>
+    <parameter expression="3.6 in/min" name="tool_feedCutting"/>
+    <parameter expression="tool_feedCutting/(tool_spindleSpeed * tool_numberOfFlutes)" name="tool_feedPerTooth"/>
+    <parameter expression="120inpm" name="tool_feedProbeLink"/>
+    <parameter expression="3.6in/min" name="tool_feedEntry"/>
+    <parameter expression="3.6in/min" name="tool_feedExit"/>
+    <parameter expression="12inpm" name="tool_feedProbeMeasure"/>
+    <parameter expression="3.6in/min" name="tool_feedRamp"/>
+    <parameter expression="3.6in/min" name="tool_feedPlunge"/>
+    <parameter expression="tool_feedPlunge/tool_spindleSpeed" name="tool_feedPerRevolution"/>
+    <parameter expression="tool_feedPlunge" name="tool_feedRetract"/>
+    <parameter expression="true" name="tool_clockwise"/>
+    <parameter expression="'none'" name="featureOperationId"/>
+    <parameter expression="true" name="circularFaces"/>
+    <parameter expression="true" name="selectSameDiameter"/>
+    <parameter expression="false" name="selectSameDepth"/>
+    <parameter expression="false" name="selectSameTopZ"/>
+    <parameter expression="true" name="containmentBoundary"/>
+    <parameter expression="false" name="orderHolesByDepth"/>
+    <parameter expression="'optimize-order'" name="holeToolpathOrder"/>
+    <parameter expression="true" name="holeToolpathOrder_bidirectional"/>
+    <parameter expression="false" name="reverseOrder"/>
+    <parameter expression="tool_diameter * 1e-5" name="compareTolerance"/>
+    <parameter expression="3.55600000000085mm" name="holeTopDiameter"/>
+    <parameter expression="false" name="overrideToolView"/>
+    <parameter expression="'axesZX'" name="view_orientation_mode"/>
+    <parameter expression="false" name="view_orientation_axisZ"/>
+    <parameter expression="false" name="view_orientation_flipZ"/>
+    <parameter expression="false" name="view_orientation_axisX"/>
+    <parameter expression="false" name="view_orientation_flipX"/>
+    <parameter expression="false" name="view_orientation_axisY"/>
+    <parameter expression="false" name="view_orientation_flipY"/>
+    <parameter expression="false" name="view_orientation_cSys"/>
+    <parameter expression="'jobOrigin'" name="view_origin_mode"/>
+    <parameter expression="false" name="view_origin_point"/>
+    <parameter expression="'top center'" name="view_origin_boxPoint"/>
+    <parameter expression="'from stock top'" name="clearanceHeight_mode"/>
+    <parameter expression="false" name="clearanceHeight_ref"/>
+    <parameter expression="2in" name="clearanceHeight_offset"/>
+    <parameter expression="50.8" name="clearanceHeight_value"/>
+    <parameter expression="'from stock top'" name="retractHeight_mode"/>
+    <parameter expression="false" name="retractHeight_ref"/>
+    <parameter expression="0.25 in" name="retractHeight_offset"/>
+    <parameter expression="6.35" name="retractHeight_value"/>
+    <parameter expression="'from stock top'" name="topHeight_mode"/>
+    <parameter expression="false" name="topHeight_ref"/>
+    <parameter expression="0.05 in" name="topHeight_offset"/>
+    <parameter expression="1.27" name="topHeight_value"/>
+    <parameter expression="'from stock bottom'" name="bottomHeight_mode"/>
+    <parameter expression="false" name="bottomHeight_ref"/>
+    <parameter expression="-.02 in" name="bottomHeight_offset"/>
+    <parameter expression="-3.683" name="bottomHeight_value"/>
+    <parameter expression="0.0001 in" name="tolerance"/>
+    <parameter expression="tolerance * 0.5" name="contourTolerance"/>
+    <parameter expression="tolerance" name="calculationTolerance"/>
+    <parameter expression="0.01*calculationTolerance" name="thinningTolerance"/>
+    <parameter expression="0.0004in" name="chainingTolerance"/>
+    <parameter expression="1" name="threadPitch"/>
+    <parameter expression="'computer'" name="compensationType"/>
+    <parameter expression="false" name="doMultiplePasses"/>
+    <parameter expression="2" name="numberOfStepovers"/>
+    <parameter expression="tool_diameter * 0.5" name="stepover"/>
+    <parameter expression="false" name="doFinishingPasses"/>
+    <parameter expression="tool_diameter * 0.1" name="finishingStepover"/>
+    <parameter expression="false" name="nullPass"/>
+    <parameter expression="'climb'" name="direction"/>
+    <parameter expression="false" name="useStockToLeave"/>
+    <parameter expression="0.004in" name="stockToLeave"/>
+    <parameter expression="false" name="simpleStockToLeave"/>
+    <parameter expression="'radial'" name="highFeedrateMode"/>
+    <parameter expression="20 in/min" name="highFeedrate"/>
+    <parameter expression="0.15 in" name="safeDistance"/>
+    <parameter expression="tool_diameter * 0.1" name="leadRadius"/>
+    <parameter expression="tool_diameter * 0.05" name="leadDistance"/>
+    <parameter expression="leadRadius" name="verticalLeadRadius"/>
+    <parameter expression="true" name="leadToCenter"/>
+    <parameter expression="0.04in" name="tool_stepdown"/>
+    <parameter expression="0.008in" name="tool_finishingStepdown"/>
+    <parameter expression="tool_diameter * 0.5" name="tool_stepover"/>
+    <parameter expression="tool_diameter * 0.1" name="tool_finishingStepover"/>
+    <parameter expression="'helix'" name="tool_rampType"/>
+    <parameter expression="2.0deg" name="tool_rampAngle"/>
+  </template>
+
+</template-document>
